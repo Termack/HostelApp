@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hostel App</title>
+        <link rel="stylesheet" href="/style/header.css" />
+        <link rel="stylesheet" href="/style/customers.css" />
+    </head>
+    <body>
+        <div class="header">
+            <a id="header-title" href="/">Sparkling water</a>
+            <div>
+                <a href="/">Home</a>
+                <a href="/customers">Customers</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="flex">
+                <h1>Guests List</h1>
+                <div>
+                    <p><a href="/customers/add">Add new guest</a><p></p>
+                    <div class="searchdiv">
+                        <label for="search">Search:</label>
+                        <input id="search" type="text" placeholder="search" />
+                    </div>
+                </div>
+            </div>
+            <table id="customer-table">
+                <tr>
+                    <th>Id</th>
+                    <th>Phone number</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>E-mail adress</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>aa.aa</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>aa.aa</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>aa.aa</td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <div><p>Sparkling water hostel, Sparkling Water main st. 1000. Caxambu-MG. © 2020 Hostel Sparkling Water</p></div>
+            <div class="abs">
+                <p>
+                    Sparkling water hostel, Sparkling Water main st. 1000.
+                    Caxambu-MG. © 2020 Hostel Sparkling Water
+                </p>
+            </div>
+        </div>
+        <script src="/js/guests.js"></script>
+    </body>
+</html>

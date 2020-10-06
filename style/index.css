@@ -1,0 +1,51 @@
+#top{
+    display: flex;
+}
+
+#top h1{
+    color: #243238;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+#top #content-title{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#description{
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.dark-text{
+    color: #243238;
+    font-size: 22px;
+}
+
+.info{
+    width: 50%;
+    padding: 20px;
+}
+
+#park{
+    display: flex;
+    padding: 80px;
+    background-color:white;
+    color: #243238;
+}
+
+#park p{
+    font-size: 22px;
+}
+
+#park h1{
+    color: #243238;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#park div{
+    margin-left: 80px;
+}

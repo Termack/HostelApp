@@ -1,0 +1,49 @@
+#content form{
+    width: 80%;
+    margin: auto;
+}
+
+#content form h1{
+    font-weight: 200;
+    font-size: 32px;
+    color: #243238;
+}
+
+#content form .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content form .flex input{
+    margin: 2px;
+}
+
+#content form .flex button{
+    background-color: none;
+    border: 2px solid #243238;
+    width: 20%;
+    height: 50px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#content form .flex button:hover{
+    background-color: #243238;
+    color: white;
+    cursor: pointer;
+}
+
+#content form .flex a{
+    color: #808080;
+    margin-left: 80px;
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+#content form .flex a:hover{
+    color: #243238;
+    text-decoration: underline;
+}
