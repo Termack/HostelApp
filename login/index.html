@@ -8,18 +8,21 @@
 </head>
 <body>
     <div id="content">
-        <form action="/customers" method="POST">
-            <div id="top">
-                <div>
-                    <h1>Hostel Sparkling Water</h1>
-                    <p>- Employee login</p>
+        <div class="wrapper">
+            <form action="/customers" method="POST">
+                <div id="top">
+                    <div>
+                        <h1>Hostel Sparkling Water</h1>
+                        <p>- Employee login</p>
+                    </div>
+                    <a href="/">Home</a>
                 </div>
-                <a href="/">Menu</a>
-            </div>
-            <input id="username" type="text" name="username" placeholder="username">
-            <input id="password" type="password" name="password" placeholder="password">
-            <button type="submit">Sign in</button>
-        </form>
+                <input id="username" type="text" name="username" placeholder="username" required>
+                <input id="password" type="password" name="password" placeholder="password" required>
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
     </div>
+    <script src="/js/changeStyle.js"></script>
 </body>
 </html>

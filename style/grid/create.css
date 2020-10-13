@@ -9,11 +9,13 @@
     color: #243238;
 }
 
-#content form .grid input{
-    margin: 2px;
+#content form .grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
 }
 
-#content form .grid{
+#content form .flex{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
@@ -33,12 +35,6 @@
 
 #content form .seven-three{
     grid-template-columns: 7fr 3fr;
-}
-
-#content form .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #content form .flex button{

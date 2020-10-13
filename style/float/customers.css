@@ -9,16 +9,19 @@
 }
 
 #content .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
     padding: 10px 20px 0;
 }
 
 #content .flex h1{
+    float: left;
     font-size: 32px;
     font-weight: 200;
     color: #243238;
+}
+
+#content .flex div{
+    float: right;
 }
 
 #content .flex p{

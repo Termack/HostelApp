@@ -20,9 +20,6 @@ body{
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px;
     background: #243238;
 }
@@ -50,6 +47,13 @@ input:focus{
 
 .header a:not(#header-title):hover{
     opacity: 0.8;
+}
+
+.header div{
+    float: right;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
 }
 
 #header-title{

@@ -19,35 +19,51 @@
     <div id="content">
         <form action="">
             <h1>Add guest</h1>
-            <div class="flex">
-                <input style="width: 50%;" type="text" name="firstName" placeholder="First Name">
-                <input style="width: 50%;" type="text" name="lastName" placeholder="Last Name">
+            <div class="grid one-one">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
             </div>
-            <div class="flex">
-                <input style="width: 50%;" type="text" name="emailAdress" placeholder="E-mail Address">
-                <input style="width: 50%;" type="text" name="phoneNumber" placeholder="Phone Number">
+            <div class="grid one-one">
+                <input type="email" name="emailAdress" placeholder="E-mail Address" required>
+                <input type="tel" name="phoneNumber" placeholder="Phone Number" pattern="[+][0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
-            <div class="flex">
-                <input style="width: 100%;" type="text" name="address" placeholder="Adress">
+            <div class="grid one">
+                <input type="text" name="address" placeholder="Adress">
             </div>
-            <div class="flex">
-                <input style="width: 70%;" type="text" name="country" placeholder="Country">
-                <input style="width: 30%;"class="state" type="text" name="state" placeholder="State">
+            <div class="grid seven-three">
+                <input type="text" name="country" placeholder="Country">
+                <input type="text" name="state" placeholder="State">
             </div>
             <div class="flex">
                 <button type="submit">Save</button>
-                <a href="/customers">Return to customers list</a>
+                <a href="/customers"> Return to customers list</a>
             </div>
         </form>
     </div>
     <div id="footer">
-        <div><p>Sparkling water hostel, Sparkling Water main st. 1000. Caxambu-MG. © 2020 Hostel Sparkling Water</p></div>
+        <div>
+            <p>
+                Sparkling water hostel, Sparkling Water main st. 1000.
+                Caxambu-MG. © 2020 Hostel Sparkling Water
+            </p>
+            <p>Change style:</p>
+            <button>Flex + Grid</button>
+            <button>Float</button>
+            <button>Flex</button>
+            <button>Grid</button>
+        </div>
         <div class="abs">
             <p>
                 Sparkling water hostel, Sparkling Water main st. 1000.
                 Caxambu-MG. © 2020 Hostel Sparkling Water
             </p>
+            <p>Change style:</p>
+            <button class="changeStyle" value="">Flex + Grid</button>
+            <button class="changeStyle" value="float/">Float</button>
+            <button class="changeStyle" value="flex/">Flex</button>
+            <button class="changeStyle" value="grid/">Grid</button>
         </div>
     </div>
+    <script src="/js/changeStyle.js"></script>
 </body>
 </html>

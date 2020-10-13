@@ -9,36 +9,37 @@
     color: #243238;
 }
 
-#content form .grid input{
-    margin: 2px;
-}
-
 #content form .grid{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    width: 100%;
+}
+
+#content form .grid input:first-child{
+    float: left;
+}
+
+#content form .grid input:nth-child(2){
+    float: right;
+}
+
+#content form .one-one input{
+    width: 48%;
+}
+
+#content form .one input{
+    width: 100%;
+}
+
+#content form .seven-three input:nth-child(1){
+    width: 67%;
+}
+
+#content form .seven-three input:nth-child(2){
+    width: 29%;
 }
 
 #content form .grid input{
     margin: 2px;
-}
-
-#content form .one-one{
-    grid-template-columns: 1fr 1fr;
-}
-
-#content form .one{
-    grid-template-columns: 1fr;
-}
-
-#content form .seven-three{
-    grid-template-columns: 7fr 3fr;
-}
-
-#content form .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #content form .flex button{

@@ -9,36 +9,36 @@
     color: #243238;
 }
 
-#content form .grid input{
-    margin: 2px;
-}
-
 #content form .grid{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-}
-
-#content form .grid input{
-    margin: 2px;
-}
-
-#content form .one-one{
-    grid-template-columns: 1fr 1fr;
-}
-
-#content form .one{
-    grid-template-columns: 1fr;
-}
-
-#content form .seven-three{
-    grid-template-columns: 7fr 3fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #content form .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#content form .grid input{
+    margin: 2px;
+}
+
+#content form .one-one input{
+    width: 50%;
+}
+
+#content form .one input{
+    width: 100%;
+}
+
+#content form .seven-three input:nth-child(1){
+    width: 70%;
+}
+
+#content form .seven-three input:nth-child(2){
+    width: 30%;
 }
 
 #content form .flex button{

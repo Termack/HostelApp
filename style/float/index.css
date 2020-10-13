@@ -1,6 +1,6 @@
 #top{
-    display: flex;
     padding: 0 80px;
+    overflow: hidden;
 }
 
 #top h1{
@@ -26,15 +26,25 @@
 }
 
 .info{
-    width: 50%;
+    display: table-cell;
+    width: 45%;
+    height: 100%;
     padding: 20px;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 #park{
-    display: flex;
     padding: 80px;
     background-color:white;
     color: #243238;
+    overflow: hidden;
 }
 
 #park p{
@@ -47,6 +57,10 @@
     font-size: 30px;
 }
 
+#park img{
+    float: left;
+}
+
 #park div{
-    margin-left: 80px;
+    float: right;
 }

@@ -20,9 +20,8 @@ body{
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
     padding: 30px;
     background: #243238;
 }
