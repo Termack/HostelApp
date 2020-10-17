@@ -80,7 +80,7 @@ function setupPagination() {
 }
 
 function getGuests() {
-    fetch("/customers.json")
+    fetch("https://cors-anywhere.herokuapp.com/https://hostel-app-back-end-api.herokuapp.com/customers")
         .then((response) => response.text())
         .then((data) => {
             allGuests = JSON.parse(data);
@@ -92,7 +92,7 @@ function getGuests() {
 }
 
 async function getGuestsAsync() {
-    const response = await fetch("/customers.json");
+    const response = await fetch("https://cors-anywhere.herokuapp.com/https://hostel-app-back-end-api.herokuapp.com/customers");
     const text = await response.text();
     allGuests = JSON.parse(text);
     guests = allGuests;
