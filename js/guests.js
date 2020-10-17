@@ -107,4 +107,5 @@ function clear(){
     setupPagination();
 }
 
+setupPagination();
 window.onload = getGuests();
