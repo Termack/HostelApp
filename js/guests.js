@@ -1,5 +1,5 @@
-var allGuests;
-var guests;
+var allGuests = [];
+var guests = [];
 
 function guestList(guests,page) {
     var new_table = document.createElement("tbody");
